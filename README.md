@@ -48,7 +48,7 @@ A modern, responsive portfolio website showcasing expertise in AI, machine learn
 
 ## 🎯 Key Achievements Showcased
 
-- Medical imaging AI models
+- Machine Learning and AI models
 - Computer vision applications
 - LLM implementations
 - Competitive programming participation
