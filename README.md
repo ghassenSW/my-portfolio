@@ -46,6 +46,17 @@ A modern, responsive portfolio website showcasing expertise in AI, machine learn
 - Desktop: 1024px+
 - Large: 1280px+
 
+## 🌐 Live Website & Preview
+
+Check out the live portfolio here:  
+👉 [**Visit Portfolio Website**]([https://your-portfolio-link.com](https://my-portfolio-delta-ashen-37.vercel.app/))
+
+### Website Preview
+
+<img src="website_preview.png" alt="Portfolio Screenshot" width="800"/>
+
+*(Replace `website_preview.png` with your actual screenshot file inside the repo root.)*
+
 ## 🎯 Key Achievements Showcased
 
 - Machine Learning and AI models
