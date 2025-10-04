@@ -49,7 +49,7 @@ A modern, responsive portfolio website showcasing expertise in AI, machine learn
 ## 🌐 Live Website & Preview
 
 Check out the live portfolio here:  
-👉 [**Visit Portfolio Website**]([https://your-portfolio-link.com](https://my-portfolio-delta-ashen-37.vercel.app/))
+👉 [**Visit Portfolio Website**]([https://my-portfolio-delta-ashen-37.vercel.app/))
 
 ### Website Preview
 
