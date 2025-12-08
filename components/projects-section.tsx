@@ -26,6 +26,41 @@ const projects = [
     demoLink: "" // Replace with actual demo link
   },
   {
+    title: "IVF Patient Response Prediction System",
+    description: "AI-powered clinical decision support system for predicting ovarian response to IVF treatment. Uses calibrated machine learning models with SHAP explainability to stratify patients into response categories, helping optimize treatment protocols.",
+    category: "Healthcare AI / Machine Learning",
+    icon: ChartBar,
+    technologies: ["Python", "Scikit-learn", "FastAPI", "SHAP", "Pandas", "NumPy"],
+    features: [
+      "Calibrated Gradient Boosting with 86.1% accuracy",
+      "SHAP-based model explainability for clinical insights",
+      "REST API with automatic feature normalization",
+      "Interactive web interface for real-time predictions",
+      "Probability outputs for low, optimal, and high response"
+    ],
+    status: "Completed",
+    color: "text-purple-500",
+    githubLink: "https://github.com/ghassenSW/IVF-Patient-Response-Prediction-System",
+    demoLink: "https://ivf-patient-response-prediction-system.onrender.com"
+  },
+   {
+    title: "Leaf Disease Segmentation",
+    description: "Deep learning-based plant disease segmentation using U-Net architecture. Designed to identify and segment disease-affected regions in leaf images with an intuitive Streamlit web interface.",
+    category: "Computer Vision",
+    icon: Leaf,
+    technologies: ["TensorFlow", "Keras", "Python", "Streamlit", "OpenCV", "NumPy"],
+    features: [
+      "Semantic segmentation using U-Net",
+      "Streamlit web app for predictions",
+      "Real-time mask overlay for input images",
+      "Supports uploading new leaf images"
+    ],
+    status: "Completed",
+    color: "text-electric-green",
+    githubLink: "https://github.com/ghassenSW/leaf_disease_segmentation",
+    demoLink: "https://leafdiseasesegmentation-aornkexmsemsymjmdsmh6e.streamlit.app/"
+  },
+  {
     title: "Customer Behavior Analysis in Retail",
     description: "An AI-powered retail analytics system that tracks and analyzes customer-product interactions using YOLO object detection and regression modeling. Designed to enhance product layout strategies and improve purchase conversion in supermarkets.",
     category: "Computer Vision / Retail AI",
@@ -59,23 +94,8 @@ const projects = [
     githubLink: "", // Replace with actual GitHub link
     demoLink: "" // Replace with actual demo link
   },
-  {
-    title: "Leaf Disease Segmentation",
-    description: "Deep learning-based plant disease segmentation using U-Net architecture. Designed to identify and segment disease-affected regions in leaf images with an intuitive Streamlit web interface.",
-    category: "Computer Vision",
-    icon: Leaf,
-    technologies: ["TensorFlow", "Keras", "Python", "Streamlit", "OpenCV", "NumPy"],
-    features: [
-      "Semantic segmentation using U-Net",
-      "Streamlit web app for predictions",
-      "Real-time mask overlay for input images",
-      "Supports uploading new leaf images"
-    ],
-    status: "Completed",
-    color: "text-electric-green",
-    githubLink: "https://github.com/ghassenSW/leaf_disease_segmentation",
-    demoLink: "https://leafdiseasesegmentation-aornkexmsemsymjmdsmh6e.streamlit.app/"
-  },
+  
+ 
   {
     title: "Tunisian Date Fruit Classification",
     description: "Convolutional Neural Network (CNN)-based image classification system that identifies 11 varieties of Tunisian date fruits. Designed to automate visual recognition using deep learning.",
