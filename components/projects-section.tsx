@@ -5,9 +5,28 @@ import { useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, MessageSquare, ShoppingCart, BatteryCharging, Leaf, Apple, ChartBar } from "lucide-react"
+import { ExternalLink, Github, MessageSquare, ShoppingCart, BatteryCharging, Leaf, Apple, ChartBar, Activity } from "lucide-react"
 
 const projects = [
+  {
+    title: "Medical AI Assistant with RAG & Geospatial Intelligence",
+    description: "Intelligent medical assistant powered by Retrieval-Augmented Generation (RAG) that provides instant first aid guidance, medical information, and connects users with 4,320+ healthcare professionals across Tunisia. Combines conversational AI with real-time geospatial mapping.",
+    category: "Healthcare AI / RAG",
+    icon: Activity,
+    technologies: ["React", "TypeScript", "FastAPI", "LangChain", "Gemini 2.5", "Astra DB", "Leaflet", "Zustand"],
+    features: [
+      "RAG-enhanced medical chatbot with context awareness",
+      "Interactive map with 4,320+ doctors across 24 governorates",
+      "Real-time streaming responses with conversation memory",
+      "Query augmentation and Reciprocal Rank Fusion (RRF)",
+      "Analytics dashboard for 48 medical specialties",
+      "Reduced RAG latency from 8s to 1.2s (85% improvement)"
+    ],
+    status: "Completed",
+    color: "text-red-500",
+    githubLink: "https://github.com/ghassenSW/medical-ai-assistant",
+    demoLink: "" // Add demo link if available
+  },
   {
     title: "Gemini Chatbot with Streamlit and Astra DB",
     description: "A Retrieval-Augmented Generation (RAG) chatbot that leverages Google Gemini and Astra DB to provide intelligent, context-aware answers from uploaded PDFs or text documents. Built with a focus on usability, flexibility, and real-time interaction.",
@@ -138,12 +157,9 @@ export function ProjectsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
 
-  console.log("Projects section in view:", isInView)
-
-  const handleProjectClick = (project: string, type: string, link: string) => {
-    console.log(`${type} clicked for project:`, project)
-    if (type === "GitHub" || type === "Demo") {
-      window.location.href = link
+  const handleProjectClick = (link: string) => {
+    if (typeof window !== 'undefined' && link) {
+      window.open(link, '_blank', 'noopener,noreferrer')
     }
   }
 
@@ -252,7 +268,7 @@ export function ProjectsSection() {
                       size="sm" 
                       variant="outline"
                       className="flex-1 hover:bg-electric-blue hover:text-white transition-all duration-300"
-                      onClick={() => handleProjectClick(project.title, "GitHub", project.githubLink)}
+                      onClick={() => handleProjectClick(project.githubLink)}
                       disabled={!project.githubLink}
                     >
                       <Github className="w-4 h-4 mr-2" />
@@ -261,7 +277,7 @@ export function ProjectsSection() {
                     <Button 
                       size="sm"
                       className="flex-1 bg-electric-blue hover:bg-electric-blue/90"
-                      onClick={() => handleProjectClick(project.title, "Demo", project.demoLink)}
+                      onClick={() => handleProjectClick(project.demoLink)}
                       disabled={!project.demoLink}
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
